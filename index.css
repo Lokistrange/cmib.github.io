@@ -1,0 +1,112 @@
+/* header */
+body {
+    background-color: rgb(233, 238, 242);
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  /* Style the header */
+  header {
+    background-color: rgb(237, 42, 120);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-family: fantasy;
+  }
+
+  /* Create two columns/boxes that floats next to each other */
+  nav {
+    float: left;
+    width: 30%;
+    height: 850px;
+    /* only for demonstration, should be removed */
+    background: rgb(233, 238, 242);
+    padding: 20px;
+    font-family: fantasy;
+    text-align: center;
+    font-size: 100%;
+  }
+
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #ffffff;
+    height: 4320px;
+    /* only for demonstration, should be removed */
+  }
+
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Style the footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+
+    nav,
+    article {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  /* imagem 1 */
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* imagem 2 */
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+   /* redes sociais */
+   .nav {
+    background-color: rgb(255, 255, 255);
+    list-style-type: none;
+    text-align: center;
+    margin: 4px;
+    padding: 0px;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* imagem 3 */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
